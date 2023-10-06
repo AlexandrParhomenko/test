@@ -1,0 +1,37 @@
+.spinner {
+  display: flex;
+  padding-left: 50%;
+  padding-top: 20%;
+}
+
+.table {
+  max-width: 1500px;
+  width: 100%;
+  background-color: #e8e8e8;
+  border-spacing: 0 10px;
+  overflow-x: hidden;
+  cursor: pointer;
+}
+
+.rootTable {
+  border-spacing: 0 10px
+}
+
+.paymentAmount {
+  color: red;
+}
+
+.instructorColumn {
+  color: grey;
+}
+
+.studentStatusColumn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+}
+
+
+
+

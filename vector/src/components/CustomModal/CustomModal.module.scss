@@ -1,0 +1,99 @@
+.modalHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.employeeName {
+  cursor: pointer;
+  color: #19b0b0;
+}
+
+.sectionPicker {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #19b0b0;
+  margin: 10px;
+  padding: 10px;
+
+  &__active {
+    background-color: #a9eeee;
+    color: #348a8a;
+    border-bottom: 1px solid #348a8a;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.item {
+  max-width: 150px;
+  width: 100%;
+}
+
+.formWrapper {
+  column-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.userDataBox{
+  display: flex;
+  flex-direction: row;
+}
+
+.formInput {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  min-height: 100px;
+}
+
+.submitBtnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.cancelBtn {
+  margin-right: 20px;
+  border: none;
+  color: #19b0b0;
+  text-transform: uppercase;
+}
+
+.submitBtn {
+  height: 40px;
+  color: white;
+  padding: 0 30px;
+  background-color: #19b0b0;
+  text-transform: uppercase;
+}
+
+
+.groupWindow {
+  background-color: red;
+  width: fit-content;
+  padding: 5px 10px;
+  color: white;
+}

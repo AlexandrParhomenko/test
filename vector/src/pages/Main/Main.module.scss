@@ -1,0 +1,276 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  max-width: 1920px;
+  width: 100%;
+
+  &__content {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: row;
+  max-width: 1920px;
+  width: 100%;
+}
+
+.asideMenu {
+  z-index: 10;
+  max-width: 60px;
+  background-color: #5e5e5e;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &__text {
+    position: fixed;
+    align-self: center;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    color: white;
+    font-size: 17px;
+  }
+}
+
+.groupPickerWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 250px;
+  row-gap: 15px;
+}
+
+.groupPicker {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e34d4d;
+  color: white;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.groupList {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.categoryInput {
+  margin: 0 10px;
+  width: 100%;
+  max-width: -webkit-fill-available;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.categoryWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  row-gap: 10px;
+}
+
+.categoryType {
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 15px;
+  border: 1px solid #e34d4d;
+}
+
+
+.addStudentBtn {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  height: 40px;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+
+  &__logo {
+
+    &:hover {
+      color: #e34d4d;
+    }
+  }
+}
+
+.tableWrapper {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: space-between;
+  width: 100%;
+
+  &__head {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.filterIconsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid darkgrey;
+  margin-left: 10px;
+}
+
+.filterIcon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  border-right: 1px solid darkgrey;
+  cursor: pointer;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.filterCategories {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.filterCategory {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainContentWrapper {
+  max-width: 1500px;
+  width: 100%;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 10px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.tableBackground {
+  background-color: white;
+  min-height: 80vh;
+  padding: 0 10px;
+}
+
+.inputBar {
+
+  width: -webkit-fill-available;
+  padding: 10px;
+  margin: 10px;
+}
+
+@media (max-width: 700px) {
+  .tableWrapper__head {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .filterIconsWrapper {
+    height: 40px;
+  }
+
+  .filterCategories {
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 5px;
+    font-size: 18px;
+  }
+
+  .table__searchBar {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .main__content {
+    width: unset;
+  }
+
+  .table {
+    margin: 0;
+  }
+
+  .tableBackground {
+    min-height: 20vh;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .categoryWrapper {
+    display: none;
+  }
+
+  .groupList {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+  }
+
+  .groupPickerWrapper {
+    width: 100%;
+  }
+
+  .mainBox {
+    flex-direction: column;
+  }
+
+  .groupList {
+    flex-direction: row;
+  }
+
+  .tableWrapper {
+    flex-direction: column;
+    row-gap: 15px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+

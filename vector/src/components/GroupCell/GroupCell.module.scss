@@ -1,0 +1,48 @@
+.groupBox {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  text-align: initial;
+  border-bottom: 1px solid #e7e7e7;
+  cursor: pointer;
+
+  &__category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 15px;
+    border-radius: 20px;
+    background-color: green;
+    width: fit-content;
+    font-size: 14px;
+    color: white;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__categoryWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+}
+
+.groupName {
+  font-size: 23px;
+}
+
+.groupState {
+  color: red;
+}
+
+.active {
+  box-sizing: border-box;
+  background-color: #e7e7e7;
+  border-left: 4px solid red;
+}

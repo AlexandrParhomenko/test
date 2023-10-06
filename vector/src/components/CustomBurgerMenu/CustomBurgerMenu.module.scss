@@ -1,0 +1,38 @@
+.menu {
+  background-color: #364150;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.asideMenu__logo {
+  align-self: flex-end;
+}
+
+.burgerButton {
+  padding: 14px 0;
+  cursor: pointer;
+  height: 20px;
+  width: 30px;
+  color: #b9b9b9;
+  transition: ease-out 0.3s;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.burgerMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+
+  &:hover {
+    color: white;
+  }
+}

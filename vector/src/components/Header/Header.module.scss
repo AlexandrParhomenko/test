@@ -1,0 +1,29 @@
+.textInput {
+  border: 1px solid #f1f1f1;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.table__searchBar {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+
+  &__button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: #e34d4d !important;
+    }
+  }
+}

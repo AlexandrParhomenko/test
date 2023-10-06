@@ -1,0 +1,12 @@
+.base {
+  display: flex;
+  flex-direction: row;
+
+  &__content {
+    max-width: 1920px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
